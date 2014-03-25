@@ -73,7 +73,6 @@ p{
     height: 150px;
     overflow: hidden;
     background: url(../images/its_lennys_fault_logo.png) no-repeat 20px 4px;
-    cursor: pointer;
 }
 #header .logo h1{
     font-size: 3em; 
