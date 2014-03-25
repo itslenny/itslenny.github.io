@@ -187,6 +187,10 @@ body.innerlvl2 #viewport{
     background-position: -64px 0px;
 }
 
+.item-wrap ul li{
+    margin: 0 20px 10px 30px;
+}
+
 /** MEDIA QUERIES **/
 
 @media only screen and (max-width: 3000px) {
