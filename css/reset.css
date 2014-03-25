@@ -1,0 +1,32 @@
+/* reset */
+html, body, div, span, object,
+header, nav, footer, section, aside, article, figure, time, mark, embed, video, audio,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, address, cite, code, pre,
+del, em, img, ins, q,
+small, strong, sub, sup, samp,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	padding:0; border:0; margin:0; font-size:100%; vertical-align:baseline; -webkit-text-size-adjust: none;
+}
+
+img, header, hgroup, nav, footer, section, aside, article, figure, figcaption {display:block;}
+
+form { display: inline; }
+
+input,input:focus,a,*:focus {
+    outline: 0;
+}
+
+/* Clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */

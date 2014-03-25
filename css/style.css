@@ -1,0 +1,263 @@
+/*
+
+336699 lt blue
+FFCC66 pale yellow
+FFFFFF white
+000000 black
+003366 dk blue
+
+*/
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+body{
+    background: white;
+}
+
+body.innerlvl2{
+    background: #FFCC66;
+}
+
+a{
+   color: #2222DD;
+   text-decoration: none;
+   font-weight: normal;
+}
+
+a:hover{
+   color: #0000FF;
+   text-decoration: none;
+}
+
+h1{
+    font-size: 2em;
+    margin: 5px 0 10px 0;
+    color: #336699;
+}
+
+h3{
+    font-size: 1.4em;
+    margin: 5px 0 10px 0;
+    clear: both;
+    color: #003366;         
+}
+
+p{
+    font-size: 1em;
+    margin: 6px 0 12px 0;
+    color: #336699;
+    line-height: 1.4em; 
+}
+
+#header{
+    max-width: 960px;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    color: #003366;
+    position: relative; 
+    background: transparent; /* #FFCC66; */
+    height: 170px;
+    z-index: 99;
+}
+
+#header .logo{
+    float: left;
+    padding: 20px 0 0 20px;
+    display: block;
+    width: 40%;  
+    color: black; 
+    height: 150px;
+    overflow: hidden;
+    background: url(../images/its_lennys_fault_logo.png) no-repeat 20px 4px;
+    cursor: pointer;
+}
+#header .logo h1{
+    font-size: 3em; 
+    color: black;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: none;
+}
+
+#header .logo h3{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: none;    
+}
+
+#footer{
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 0.1em;
+}
+
+body.innerlvl2 #viewport{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#pageWrap{
+    max-width: 960px;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    background: white;
+    min-height: 500px;
+    border-radius: 20px;
+    z-index: 111;
+    
+    -webkit-box-shadow: -1px -2px 15px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    -1px -2px 15px rgba(50, 50, 50, 0.3);
+    box-shadow:         -1px -2px 15px rgba(50, 50, 50, 0.3);    
+}
+
+#pageWrap .content-left{
+    width: 70%;
+    float: left;
+    min-height: 600px;
+    border-right: 4px solid #FFCC66; /* 336699 003366 FFCC66; */
+}
+
+#pageWrap .content-left.content-wide{
+    width: auto;
+    float: none;
+    clear: both;
+    border: none;
+}
+
+#pageWrap .content-left .content{
+    padding: 10px 20px 20px 20px;
+}
+
+#pageWrap .content-right{
+    width: 29%;
+    min-width: 200px;
+    float: right;
+}
+
+#pageWrap .content-right .content{
+    padding: 20px;
+}
+
+
+.item-wrap{
+    border: 1px solid #336699;
+    border-radius: 5px;
+    padding: 0;
+    margin: 30px 0 30px 0;
+}
+
+.item-wrap h3{
+    background: #336699;
+    color: white;
+    margin: 0;
+    padding: 5px 5px 5px 10px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+.item-wrap p{
+    padding-left: 10px;
+    color: #003366;
+}
+
+.icon{
+    background: url(../images/social-icons.png) no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.icon-ilf{
+    background-position: 0 0px;
+}
+.icon-g{
+    background-position: -16px 0px;
+}
+.icon-git{
+    background-position: -32px 0px;
+}
+.icon-so{
+    background-position: -48px 0px;
+}
+.icon-tw{
+    background-position: -64px 0px;
+}
+
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width: 3000px) {
+    .its-reponsive{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .its-reponsive{
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 430px) {
+    .home-logo{
+        margin: 0px;
+        top: 5px;
+    }
+    .home-logo img{
+        width: 140px;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    .home-logo{
+        opacity: 0.4;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    #pageWrap{
+        border-radius: 0px;
+    }
+
+    #pageWrap .content-left{
+        clear: both;
+        float: none;
+        width: 100%;
+        border: none;        
+    }
+    #pageWrap .content-right{
+        clear: both;
+        float: none;
+        width: 100%;
+        border-top: 4px solid #FFCC66;
+    }    
+      
+    #header .logo{
+        float: none;
+        clear: both;
+        width: 100%;
+        text-align: center;
+        width: 645px;
+        position: relative;
+        padding: 0 0 20px 0;      
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    body{
+        font-size: 13px;
+    }    
+    #header{
+        height: 130px;    
+    }
+    #header .logo{
+        background-size: 40%;
+    }
+
+}
+

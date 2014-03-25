@@ -2,33 +2,80 @@
 <html>
     <head>
         <title>It's Lennys Fault</title>
-        <style>
-            body,html{
-                margin: 0;
-                padding: 0;
-                background: #CCCCCC;
-                color: black;
-                font-family: Helvetica, Arial, sans-serif;
-            }
-            
-            #centerer{
-                background: white;
-                width: 370px;
-                height: 170px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin: -105px 0 0 -205px;
-                border-radius: 20px;
-                padding: 20px
-            }
-        </style>
+        <link rel="stylesheet" media="all" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
     </head>
-    <body>
-        <div id="centerer">
-            <h1>It's Lennys Fault</h1>
-            <p>This is a placeholder page for my github.io pages. Maybe eventually I'll put something here.</p>
-            <p>Visit my blog at: <a href="http://www.itslennysfault.com">http://www.itslennysfault.com</a></p>
+    <body class="innerlvl2">
+        <div id="viewport">    
+            <div id="header" class="clearfix">
+                <div class="content">
+                    <div class="logo" data-url="/home">
+                        <h1>It's Lenny's Fault</h1>
+                        <h3>Blog and portfolio of Lenny Urbanowski</h3>
+                    </div>            
+                    <div class="taint"></div>
+                </div>
+            </div>
+            <div id="pageWrap" class="clearfix">
+                <div class="content-left">
+                  <div class="content">
+                      <h1>Open Source Projects</h1>
+                        <p>Below are some open source projects I've created. If you would like to checkout the work I do for hire check out the <a href="http://itslennysfault.com/portfolio">Portfolio page</a> or for some of my more fun projects check my <a href="http://itslennysfault.com/projects">Projects page</a>.</p>
+                        <div class="item-wrap">
+                            <h3>Angular Pretty Checkable</h3>
+                            <p>Pure angular pretty checkbox / radio directive. Makes it incredibly simple to have pretty checkboxes / radios in angular.</p>
+                            <p>
+                                <a href="https://github.com/itslenny/angular-pretty-checkable" target="_blank">Source (Github)</a> &bull; 
+                                <a href="http://itslenny.github.io/angular-pretty-checkable/" target="_blank">Demo</a>
+                            </p>
+                        </div>
+                        <div class="item-wrap">
+                            <h3>Node.js Base64-XOR</h3>
+                            <p>Simple Node.js module that creates a base64 encoded xor cipher from a pair of strings. Includes 2 methods encode / decode. For use when speed is important and security is not.</p>
+                            <p>
+                                <a href="https://github.com/itslenny/base64-xor" target="_blank">Source (Github)</a> &bull; 
+                                <a href="https://www.npmjs.org/package/base64-xor" target="_blank">Install (NPM)</a>
+                            </p>
+                        </div>
+                        <div class="item-wrap">
+                            <h3>jQuery Quiccordion</h3>
+                            <p>An extremely quick, simple, lightweight (2KB packed), recursive accordion menu plugin This project is aimed at creating the simplest possible accordion plugin for jQuery. The goal is to simply convert any unordered list object into a simple collapasable menu. This project has no frills and never will. If you simply want your UL too expand / collapse this is the project for you.</p>
+                            <p>
+                                <a href="https://github.com/itslenny/jquery-quiccordion" target="_blank">Source (Github)</a> &bull; 
+                                <a href="https://plugins.jquery.com/quiccordion/" target="_blank">Download (jQuery)</a> &bull; 
+                                <a href="http://itslenny.github.io/quiccordion" target="_blank">Demo</a>                                                                 
+                            </p>
+                        </div>
+                        <div class="item-wrap">
+                            <h3>jQuery Pixel Holdr</h3>
+                            <p>A tool to quickly grab place holder images from flickr. Meant for use on demo / development sites (not for production)</p>
+                            <p>
+                                <a href="https://github.com/itslenny/jquery-pixelholdr" target="_blank">Source (Github)</a> &bull; 
+                                <a href="https://plugins.jquery.com/pixelholdr/" target="_blank">Download (jQuery)</a>
+                            </p>
+                        </div>
+                  </div>
+                </div>
+                <div class="content-right">
+                  <div class="content">          
+                      <h3>Find Me</h3>
+                      <a href="http://itslennysfault.com" target="_blank"><i class="icon icon-ilf"></i>itslennysfault.com</a>
+                      <br><br>                      
+                      <a href="https://plus.google.com/u/0/111257293021995123468" target="_blank"><i class="icon icon-g"></i>Google+</a>
+                      <br><br>
+                      <a href="https://github.com/itslenny" target="_blank"><i class="icon icon-git"></i>Github</a>
+                      <br><br>
+                      <a href="http://stackoverflow.com/users/3068157/lenny" target="_blank"><i class="icon icon-so"></i>Stack Overflow</a>
+                      <br><br>
+                      <a href="http://twitter.com/itslennysfault"= target="_blank"><i class="icon icon-tw"></i>Twitter</a>                      
+                      <br><br>        
+                  </div>       
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            &copy;2014 Lenny Urbanowski
         </div>
     </body>
 </html>
