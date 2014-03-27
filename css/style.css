@@ -186,6 +186,9 @@ body.innerlvl2 #viewport{
 .icon-tw{
     background-position: -64px 0px;
 }
+.icon-li{
+    background-position: -80px 0px;
+}
 
 .item-wrap ul li{
     margin: 0 20px 10px 30px;
